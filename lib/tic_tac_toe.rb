@@ -42,9 +42,34 @@ def turn(board)
     move(board, index, current_player(board))
     display_board(board)
  else   
+<<<<<<< HEAD
     turn(board)
  end
 end   
+=======
+    puts "Invalid move."
+    turn(board)
+ end
+end   
+ # else
+    #!valid_move?(board, index)
+    #puts "Invalid move. Please enter 1-9:"
+    #turn(board)
+    #user_input = gets.strip
+    #index = user_input.to.i - 1
+  
+ # display_board(board)
+
+
+#def play(board)
+ # input = 0
+  #while input < 9 
+   #turn(board)
+   #input += 1
+   #display_board(board)
+  #end
+#end
+>>>>>>> f047a3c69f2b40d02df0f91e7351020c2f356a24
 
 def turn_count(board)
   board.count do |input| 
